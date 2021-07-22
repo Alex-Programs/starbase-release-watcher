@@ -43,7 +43,7 @@ client = commands.Bot(command_prefix="=", intents=intents)
 
 def getTime():
     present = datetime.datetime.now()
-    release = datetime.datetime.fromtimestamp(1627567200)
+    release = datetime.datetime.fromtimestamp(1627570800)
 
     left = release - present
 
