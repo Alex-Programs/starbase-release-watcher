@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea/encodings.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/starbase-release-watcher.iml
+.idea/vcs.xml
+logs.txt
+notifyUsers.txt
+token.txt
+.idea/workspace.xml
