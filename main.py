@@ -102,6 +102,10 @@ But it's almost there. Just ```diff
 
 @client.command()
 async def notifyme(ctx):
+    with open("notifyUsers.txt") as f:
+        if str(ctx.author.id) in f.read():
+            return await ctx.send("You've already been added!")
+
     with open("notifyUsers.txt", "a") as f:
         f.write(str(ctx.author.id) + "\n")
 
