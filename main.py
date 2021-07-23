@@ -121,6 +121,12 @@ async def notifyme(ctx):
     log(f"Added {str(ctx.author.id)} aka {ctx.author.name} to notify list.")
     return await ctx.send("You have been added to the list of users to notify when Starbase releases.")
 
+@owner()
+@client.command()
+async def manual_alert(ctx):
+    await ctx.send("Sending manual alert")
+    await send_dms()
+    await ctx.send("Done")
 
 with open("token.txt") as f:
     token = f.read()
