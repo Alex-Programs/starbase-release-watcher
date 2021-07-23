@@ -56,7 +56,12 @@ def getTime():
 async def update_release_status():
     while True:
         await asyncio.sleep(5)
-        released = store.is_released("454120")
+        try:
+            released = store.is_released("454120")
+        except:
+            log("Something went wrong with the check")
+            pass
+        
         log("Released: " + str(released))
 
         if released and not persistent.released:
