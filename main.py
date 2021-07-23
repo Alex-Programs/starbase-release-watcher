@@ -60,9 +60,13 @@ async def update_release_status():
             released = store.is_released("454120")
         except:
             log("Something went wrong with the check")
+            released = False
             pass
-        
-        log("Released: " + str(released))
+
+        if released:
+            log("RT")
+        else:
+            log("RF")
 
         if released and not persistent.released:
             await send_dms()
