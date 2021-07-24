@@ -106,6 +106,8 @@ But it's almost there. Just ```diff
 - {timeLeft} -
 ``` to go!*
 
+Please don't spam this command! Go to https://countdown.centralmind.net instead.
+
 *time is approximate. However, release status is not.""")
 
 
