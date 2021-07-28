@@ -89,6 +89,16 @@ async def on_ready():
     client.loop.create_task(update_release_status())
     log(f"Logged on as {client.user}")
 
+@client.event
+async def on_message(message):
+    if message.content.startswith(".join") and message.author.id == 329335798312861697 and message.guild.id == 772418499644489758:
+        await message.channel.send("Processing...")
+        await asyncio.sleep(2)
+        await message.channel.send("Integrating user 'Xavis'")
+        await asyncio.sleep(3)
+        await message.channel.send("ERROR! User is 'sus'")
+
+    await client.process_commands(message)
 
 @client.command()
 async def outyet(ctx):
