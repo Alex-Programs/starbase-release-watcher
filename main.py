@@ -34,7 +34,9 @@ def owner():
 RELEASE_MESSAGE = """
 Starbase Early Access has released on Steam! https://store.steampowered.com/app/454120/Starbase/
 
-After years of waiting, the day is finally here."""
+After years of waiting, the day is finally here.
+
+https://www.youtube.com/watch?v=UelPr55Waps"""
 
 intents = Intents.default()
 intents.members = True
